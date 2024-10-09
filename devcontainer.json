@@ -1,6 +1,6 @@
 {
     "name": "Bun Devcontainer",
-    "dockerFile": "Dockerfile",
+    "image": "cyrus01337/bun-devcontainer",
     "workspaceFolder": "/workspace",
     "postCreateCommand": "setup.sh",
     "features": {
