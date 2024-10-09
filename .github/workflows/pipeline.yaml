@@ -9,7 +9,6 @@ jobs:
     publish:
         name: Publish to Docker Hub
         runs-on: ubuntu-latest
-        if: github.ref == 'refs/heads/main' && endsWith(github.repository, '-boilerplate')
 
         steps:
             - uses: actions/checkout@v4
