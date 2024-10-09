@@ -1,4 +1,4 @@
-FROM cyrus01337/neovim AS system
+FROM cyrus01337/neovim-devcontainer AS system
 ENV DEBIAN_FRONTEND="noninteractive"
 ENV USER="developer"
 ENV HOME="/home/$USER"
