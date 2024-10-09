@@ -15,9 +15,12 @@ ENV BUN_INSTALL="$HOME/.bun"
 
 RUN curl -fsSL https://bun.sh/install | bash;
 
-FROM bun AS final
+FROM bun AS cleanup
 USER root
 
 RUN ["apt-get", "clean"]
 RUN ["apt-get", "autoremove", "-y"]
+
+FROM cleanup AS final
+USER $USER
 
