@@ -1,0 +1,9 @@
+{
+    "name": "Bun Devcontainer",
+    "dockerFile": "Dockerfile",
+    "workspaceFolder": "/workspace",
+    "postCreateCommand": "setup.sh",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+    }
+}
